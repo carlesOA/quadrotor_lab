@@ -1,0 +1,18 @@
+<launch>
+
+	  <arg name="exercise" default="$(find quadrotor_lab)/resource/exerciseARdrone.txt"/>
+
+		<node name="controller" pkg="quadrotor_lab" type="controller_node" clear_params="false" output="screen">
+			<remap from="pose" to="/vrpn_client_node/ardrone/pose"/>
+			<remap from="imu" to="/sensor_msgs/Imu"/>
+
+			<param name="cog_z" type="double" value="0.08" /> 
+			<param name="filtering" type="bool" value="true" />
+			<param name="enable_ros_info" type="bool" value="true" /> 
+
+			<!--<rosparam file="$(find quadrotor_lab)/ARdrone_controller.yaml"/>-->
+
+		</node>
+
+		<!-- <node name="waypoint_publisher_file" pkg="rotors_gazebo" type="waypoint_publisher_file" output="screen" args="$(arg exercise)"/> -->
+</launch>

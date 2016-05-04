@@ -1,0 +1,32 @@
+\subsubsection usage Usage
+\verbatim
+<node name="quadrotor_lab" pkg="quadrotor_lab" type="quadrotor_lab">
+  <param name="gravity_compensation" type="double" value="15.0" />
+  <param name="integral_window_enable" type="bool" value="False" />
+  <param name="x_kp" type="double" value="0.2" />
+  <param name="x_ki" type="double" value="0.0" />
+  <param name="x_kd" type="double" value="0.4" />
+  <param name="x_integral_limit" type="double" value="0.1" />
+  <param name="x_integral_window_size" type="int" value="500" />
+  <param name="y_kp" type="double" value="0.2" />
+  <param name="y_ki" type="double" value="0.0" />
+  <param name="y_kd" type="double" value="0.4" />
+  <param name="y_integral_limit" type="double" value="0.1" />
+  <param name="y_integral_window_size" type="int" value="1000" />
+  <param name="z_kp" type="double" value="1.0" />
+  <param name="z_ki" type="double" value="0.0" />
+  <param name="z_kd" type="double" value="0.2" />
+  <param name="z_integral_limit" type="double" value="0.04" />
+  <param name="z_integral_window_size" type="int" value="1000" />
+  <param name="yaw_kp" type="double" value="0.4" />
+  <param name="yaw_ki" type="double" value="0.0" />
+  <param name="yaw_kd" type="double" value="0.2" />
+  <param name="yaw_integral_limit" type="double" value="0.5" />
+  <param name="yaw_integral_window_size" type="int" value="500" />
+  <param name="roll_limit" type="double" value="1.0" />
+  <param name="pitch_limit" type="double" value="1.0" />
+  <param name="thrust_limit" type="double" value="1.0" />
+  <param name="yaw_limit" type="double" value="1.0" />
+</node>
+\endverbatim
+
